@@ -12,6 +12,6 @@ class Testdb extends CI_Controller
 		$data 		= array('char'=>'AAAA','varchar'=>'BBBB','text'=>'¹«±ÃÈ­²ÉÀÌÇÇ¾ú½À´Ï´Ù');
 		$insert_id	= $this->m_test->getRoleDropdownList();
 		
-		echo $insert_id;
+		echo $insert_id; 
 	}
 }
