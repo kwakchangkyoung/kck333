@@ -13,7 +13,10 @@ class M_test extends CI_Model
 	
 	function add($table, $data)
 	{
+		
 		$this->db->insert($table, $data);
+		echo "<pre>";
+		print_r($this->db);
 		return $this->db->insert_id();
 	}
 }
