@@ -10,7 +10,7 @@ class Testdb extends CI_Controller
 	function index()
 	{
 		$data 		= array('char'=>'AAAA','varchar'=>'BBBB','text'=>'¹«±ÃÈ­²ÉÀÌÇÇ¾ú½À´Ï´Ù');
-		$insert_id	= $this->m_test->getRoleDropdownList();
+		$insert_id	= $this->m_test->add();
 		
 		echo $insert_id; 
 	}
