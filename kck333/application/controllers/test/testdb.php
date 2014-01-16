@@ -11,7 +11,7 @@ class Testdb extends CI_Controller
 	{
 		echo "aa";
 		$data 		= array('char'=>'AAAA','varchar'=>'BBBB','text'=>'¹«±ÃÈ­²ÉÀÌÇÇ¾ú½À´Ï´Ù');
-		$insert_id	= $this->m_test->add();
+		$insert_id	= $this->m_test->add('idx_test', $data);
 		
 		echo $insert_id; 
 	}
