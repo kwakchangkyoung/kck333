@@ -11,9 +11,8 @@ class Testdb extends CI_Controller
 	{
 		
 // 		echo random_string('alnum', 500);
-		
 // 		exit;
-		for ($i = 0; $i < 200000000; $i++)
+		for ($i = 0; $i < 10000000; $i++)
 		{
 			$data 		= array('char'=>random_string('alnum', 5),'varchar'=>random_string('alnum', 10),'text'=>random_string('alnum', 500));
 			$insert_id	= $this->m_test->add('idx_test', $data);
