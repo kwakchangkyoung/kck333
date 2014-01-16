@@ -1,4 +1,4 @@
 DirectoryIndex index.php
-RewriteEngine on
+RewriteEngine On
 RewriteCond $1 !^(index\.php|css\/|css2\/|css_old\/|smart_editor|images\/|js\/|sample\/|poc\/|contents\/|robots\.txt)
 RewriteRule ^(.*)$ /index.php/$1 [L]
