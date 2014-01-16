@@ -9,7 +9,6 @@ class Testdb extends CI_Controller
 	
 	function index()
 	{
-		echo "aa";
 		$data 		= array('char'=>'AAAA','varchar'=>'BBBB','text'=>'무궁화꽃이피었습니다.');
 		
 		$insert_id	= $this->m_test->add('idx_test', $data);
