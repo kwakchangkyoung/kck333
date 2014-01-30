@@ -13,7 +13,7 @@ class Testdb extends CI_Controller
 		{
 			$data 		= array('fchar'=>random_string('alnum', 5),'fvarchar'=>random_string('alnum', 10),'ftext'=>random_string('alnum', 500));
 			$insert_id	= $this->m_test->add('idx_test', $data);
-			//echo $insert_id."<br>";
+			echo $insert_id."<br>";
 		}
 		//echo "====================END==================";
 	}
